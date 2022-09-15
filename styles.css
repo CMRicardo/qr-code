@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+:root {
+  --white: #fff;
+  --light-gray: hsl(212, 45%, 89%);
+  --gray-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+  --font-title: 1.2rem;
+  --font-normal: 15px;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--light-gray);
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  max-width: 300px;
+  text-align: center;
+  background: var(--white);
+  border-radius: 10px;
+  display: grid;
+  gap: 1rem;
+  place-items: center;
+  padding: 1rem;
+  box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card-title {
+  color: var(--dark-blue);
+  font-size: var(--font-title);
+}
+
+.card-text {
+  color: var(--gray-blue);
+  font-size: var(--font-normal);
+}
